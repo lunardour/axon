@@ -1,4 +1,7 @@
 package tech.learning.axon.repositories;
 
-public interface AuthorRepository {
+import org.springframework.data.repository.CrudRepository;
+import tech.learning.axon.domain.Author;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
 }
